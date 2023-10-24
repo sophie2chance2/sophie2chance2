@@ -99,7 +99,7 @@ HTML             1 hr            █▒░░░░░░░░░░░░░�
 
 <!-- TODO-IST:START -->
 🏆  2,602 Karma Points           
-🌸  Completed 1 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 473 tasks so far           
 ⏳  Longest streak is 43 days
 <!-- TODO-IST:END -->
