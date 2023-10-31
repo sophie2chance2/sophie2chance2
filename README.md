@@ -99,7 +99,7 @@ Docker        14 mins         ▓░░░░░░░░░░░░░░░�
 
 <!-- TODO-IST:START -->
 🏆  2,626 Karma Points           
-🌸  Completed 1 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 482 tasks so far           
 ⏳  Longest streak is 44 days
 <!-- TODO-IST:END -->
