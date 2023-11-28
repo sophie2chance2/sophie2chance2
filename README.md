@@ -47,11 +47,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Python     2 hrs 25 mins   ████████████████████████░   95.60 %
-CSV        2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.96 %
-Markdown   2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.68 %
-Text       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.44 %
-Bash       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.31 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
