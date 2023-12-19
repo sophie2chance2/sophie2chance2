@@ -99,7 +99,7 @@ INI      0 secs          ░░░░░░░░░░░░░░░░░░�
 
 <!-- TODO-IST:START -->
 🏆  2,770 Karma Points           
-🌸  Completed 2 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 528 tasks so far           
 ⏳  Longest streak is 50 days
 <!-- TODO-IST:END -->
