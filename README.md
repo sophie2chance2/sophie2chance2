@@ -98,8 +98,8 @@ INI      0 secs          ░░░░░░░░░░░░░░░░░░�
 🚧 **My Todoist Stats:**
 
 <!-- TODO-IST:START -->
-🏆  2,746 Karma Points           
-🌸  Completed 1 tasks today           
-✅  Completed 527 tasks so far           
-⏳  Longest streak is 49 days
+🏆  2,770 Karma Points           
+🌸  Completed 2 tasks today           
+✅  Completed 528 tasks so far           
+⏳  Longest streak is 50 days
 <!-- TODO-IST:END -->
