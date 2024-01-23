@@ -99,7 +99,7 @@ Git Config   4 mins          ▒░░░░░░░░░░░░░░░░
 
 <!-- TODO-IST:START -->
 🏆  2,866 Karma Points           
-🌸  Completed 7 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 561 tasks so far           
 ⏳  Longest streak is 54 days
 <!-- TODO-IST:END -->
