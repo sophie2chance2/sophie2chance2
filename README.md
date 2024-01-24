@@ -98,7 +98,7 @@ Text     1 min           ▒░░░░░░░░░░░░░░░░░�
 
 <!-- TODO-IST:START -->
 🏆  2,890 Karma Points           
-🌸  Completed 11 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 572 tasks so far           
 ⏳  Longest streak is 55 days
 <!-- TODO-IST:END -->
