@@ -99,7 +99,7 @@ CSV          0 secs          ░░░░░░░░░░░░░░░░░
 
 <!-- TODO-IST:START -->
 🏆  2,938 Karma Points           
-🌸  Completed 2 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 600 tasks so far           
 ⏳  Longest streak is 57 days
 <!-- TODO-IST:END -->
