@@ -99,7 +99,7 @@ Bash         4 mins          ░░░░░░░░░░░░░░░░░
 
 <!-- TODO-IST:START -->
 🏆  2,962 Karma Points           
-🌸  Completed 4 tasks today           
+🌸  Completed 0 tasks today           
 ✅  Completed 610 tasks so far           
 ⏳  Longest streak is 58 days
 <!-- TODO-IST:END -->
