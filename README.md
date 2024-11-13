@@ -47,7 +47,9 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Git Config   3 mins          █████████████████████████   100.00 %
+Python       18 mins         █████████████████████░░░░   84.25 %
+Git Config   3 mins          ████░░░░░░░░░░░░░░░░░░░░░   15.56 %
+Bash         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.19 %
 ```
 
 <!--END_SECTION:waka-->
