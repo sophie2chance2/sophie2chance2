@@ -97,8 +97,8 @@ TOML       13 mins         ███▒░░░░░░░░░░░░░�
 🚧 **My Todoist Stats:**
 
 <!-- TODO-IST:START -->
-🏆  3,778 Karma Points           
-🌸  Completed 1 tasks today           
-✅  Completed 1,125 tasks so far           
-⏳  Longest streak is 80 days
+🏆  3,898 Karma Points           
+🌸  Completed 12 tasks today           
+✅  Completed 1,136 tasks so far           
+⏳  Longest streak is 81 days
 <!-- TODO-IST:END -->
