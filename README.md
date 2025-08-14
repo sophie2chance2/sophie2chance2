@@ -47,11 +47,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML         28 mins         ███████████▒░░░░░░░░░░░░░   44.77 %
-Markdown     22 mins         ████████▓░░░░░░░░░░░░░░░░   35.28 %
-Python       10 mins         ████▒░░░░░░░░░░░░░░░░░░░░   16.77 %
-JavaScript   1 min           ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.60 %
-Git Config   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
