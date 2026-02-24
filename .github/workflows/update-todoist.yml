@@ -29,15 +29,14 @@ jobs:
               with urllib.request.urlopen(req) as r:
                   return json.loads(r.read())
 
-          user  = fetch('https://api.todoist.com/api/v1/user')
-          stats = fetch('https://api.todoist.com/api/v1/user/stats')
+          stats = fetch('https://api.todoist.com/api/v1/tasks/completed/stats')
 
-          karma           = user.get('karma', 0)
-          completed_count = stats.get('completedCount', stats.get('completed_count', 0))
-          days_items      = stats.get('daysItems', stats.get('days_items', []))
-          today           = days_items[0].get('totalCompleted', days_items[0].get('total_completed', 0)) if days_items else 0
+          karma           = stats.get('karma', 0)
+          completed_count = stats.get('completedCount', 0)
+          days_items      = stats.get('daysItems', [])
+          today           = days_items[0].get('totalCompleted', 0) if days_items else 0
           goals           = stats.get('goals', {})
-          max_streak      = goals.get('maxDailyStreak', goals.get('max_daily_streak', {}))
+          max_streak      = goals.get('maxDailyStreak', {})
           longest         = max_streak.get('count', 0) if isinstance(max_streak, dict) else 0
 
           lines = [
