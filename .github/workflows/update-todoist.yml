@@ -10,9 +10,60 @@ jobs:
   update-readme:
     name: Update this repo's README
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: abhisheknaiidu/todoist-readme@master
-        with:
+      - uses: actions/checkout@v4
+      - name: Update Todoist Stats
+        env:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-          PREMIUM: ""
+        run: |
+          python3 << 'EOF'
+          import os, json, re, urllib.request
+
+          token = os.environ['TODOIST_API_KEY']
+          headers = {'Authorization': f'Bearer {token}'}
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req) as r:
+                  return json.loads(r.read())
+
+          user  = fetch('https://api.todoist.com/api/v1/user')
+          stats = fetch('https://api.todoist.com/api/v1/user/stats')
+
+          karma           = user.get('karma', 0)
+          completed_count = stats.get('completedCount', stats.get('completed_count', 0))
+          days_items      = stats.get('daysItems', stats.get('days_items', []))
+          today           = days_items[0].get('totalCompleted', days_items[0].get('total_completed', 0)) if days_items else 0
+          goals           = stats.get('goals', {})
+          max_streak      = goals.get('maxDailyStreak', goals.get('max_daily_streak', {}))
+          longest         = max_streak.get('count', 0) if isinstance(max_streak, dict) else 0
+
+          lines = [
+              f'🏆  {karma:,} Karma Points',
+              f'🌸  Completed {today} tasks today',
+              f'✅  Completed {completed_count:,} tasks so far',
+              f'⏳  Longest streak is {longest} days',
+          ]
+          new_block = '<!-- TODO-IST:START -->\n' + '           \n'.join(lines) + '\n<!-- TODO-IST:END -->'
+
+          with open('README.md', 'r') as f:
+              readme = f.read()
+
+          updated = re.sub(r'<!-- TODO-IST:START -->.*?<!-- TODO-IST:END -->', new_block, readme, flags=re.DOTALL)
+
+          if updated != readme:
+              with open('README.md', 'w') as f:
+                  f.write(updated)
+              print('README updated')
+          else:
+              print('No changes detected')
+          EOF
+      - name: Commit and push
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git diff --cached --quiet && echo "No changes to commit" || \
+            (git commit -m "Todoist updated." && git push)
