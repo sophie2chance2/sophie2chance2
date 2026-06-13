@@ -47,7 +47,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+HTML          52 mins               ████████░░░░░░░░░░░░░░░░░   32.34 %
+JavaScript    38 mins               ██████░░░░░░░░░░░░░░░░░░░   23.60 %
+CSS           35 mins               █████▒░░░░░░░░░░░░░░░░░░░   21.71 %
+Image (svg)   18 mins               ███░░░░░░░░░░░░░░░░░░░░░░   11.48 %
+MDX           10 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.53 %
 ```
 
 <!--END_SECTION:waka-->
